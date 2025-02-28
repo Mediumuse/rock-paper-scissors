@@ -1,5 +1,4 @@
 console.log("I would like to play a little game...");
-
 //rock paper scissors game function 
 function playgame(){
 
@@ -57,12 +56,12 @@ function playround (playerchoice, computerchoice){
 //loop for 5 rounds
     for (let i = 1; i <= 5; i++) {
         
-        console.log(`\nRound: ${i}`);
+        console.log(`\nRound: ${i}`); // round counter 
 
         const playerchoice = pChoice();
         const computerchoice = npChoice(); 
 
-        console.log(`Player chose: ${playerchoice}`)
+        console.log(`Player chose: ${playerchoice}`) //announce user and computer choices
         console.log(`Computer chose: ${computerchoice}`);
 
         playround(playerchoice, computerchoice);
